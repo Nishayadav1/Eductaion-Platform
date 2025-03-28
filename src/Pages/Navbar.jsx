@@ -8,8 +8,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-md relative">
-      {/* LeftNav (Logo) */}
+<nav className="max-w-screen w-full overflow-hidden flex items-center justify-between px-6 py-4 bg-white shadow-md relative">
+{/* LeftNav (Logo) */}
       <LeftNav />
 
       {/* MiddleNav - Visible on Desktop, Hidden on Mobile */}
