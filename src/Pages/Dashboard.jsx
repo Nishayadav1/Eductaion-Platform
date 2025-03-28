@@ -3,10 +3,12 @@ import StatsCard from "../components/StatsCard";
 import ProgressBar from "../components/ProgressBar";
 import CourseCard from "../components/CourseCard";
 import { FaRegClock, FaBook, FaAward } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 const Dashboard = () => {
   return (
     <>
+    <Navbar/>
       <h1 className="text-5xl font-bold ml-7 mb-8">Dashboard</h1>
       <div className="p-4 md:p-6 space-y-6">
         {/* Stats Section */}
