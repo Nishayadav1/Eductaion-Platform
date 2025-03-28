@@ -1,6 +1,6 @@
 
 import React from "react";
-import Dashboard from "./Pages/Dashboard";
+import Dashboard from "./pages/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import Services from './pages/Services';
 import Solutions from './pages/Solutions';
 import FooterLynkt from './components/Footer';
+
 
 function App() {
   return (
