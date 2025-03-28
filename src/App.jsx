@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./pages/Navbar";
+import Navbar from "./Pages/Navbar";
 import Dashboard from "./Pages/Dashboard";
 
 
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;

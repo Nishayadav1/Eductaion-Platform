@@ -1,12 +1,13 @@
 import React from "react";
-import logo from '../assets/book3.jpg'
+import logo from '../assets/book3.jpg';
+
 const LeftNav = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex-shrink-0">
       <img
         src={logo}
         alt="Logo"
-        className="w-15 h-15 rounded-full transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
+        className="w-12 h-12 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md"
       />
     </div>
   );
