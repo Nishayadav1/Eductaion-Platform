@@ -8,7 +8,7 @@ const schedule = [
 ];
 function Schedule() {
   return (
-    <div className="w-full max-w-lg mx-auto text-center">
+    <div className="w-full max-w-lg mx-auto">
         <TimeTable/>
       <h2 className="text-2xl font-bold">My Schedule</h2>
       <div className="mt-2 space-y-2 w-full">

@@ -1,29 +1,24 @@
 import React, { useState } from "react";
 
 function Calendar() {
-  const days = ["M", "T", "W", "Th", "F","Sat","S"];
+  const days = ["M", "T", "W", "Th", "F", "Sat"];
   const [selectedDay, setSelectedDay] = useState(null);
 
-  const handleClick = (day) => {
-    setSelectedDay(day); // Set the clicked day as selected
-  };
+  const handleClick = (day) => setSelectedDay(day);
 
   return (
-    <div className="flex gap-4 my-3">
+    <div className="flex justify-center gap-2 my-3">
       {days.map((day, index) => (
         <div
           key={index}
           onClick={() => handleClick(day)}
-          className={`p-3 rounded-xl cursor-pointer transition-all ${
-            selectedDay === day ? "bg-black text-white" : "bg-gray-200"
-          } flex flex-col items-center`}
+          className={`p-3 rounded-xl cursor-pointer transition-all flex items-center justify-center w-14 h-14 text-center text-sm font-bold ${selectedDay === day ? "bg-black text-white" : "bg-gray-200"}`}
         >
-          <span className="font-bold">{day}</span>
-          <span className="text-sm text-gray-500">{14 + index}</span>
+          {day} {14 + index}
         </div>
       ))}
     </div>
   );
 }
 
-export default Calendar;
+export default Calendar;

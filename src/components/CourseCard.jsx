@@ -2,10 +2,9 @@ import React from "react";
 
 const CourseCard = ({ title, percentage, places }) => {
   return (
-    <div className="relative p-6 rounded-xl h-[200px] shadow-lg overflow-hidden flex items-center space-x-4 bg-white">
-      {/* Center - Text Content */}
+    <div className="relative p-6 rounded-xl h-[150px] shadow-lg overflow-hidden flex items-center space-x-4 bg-white">
       <div className="flex-1">
-        <h3 className="text-3xl font-bold">{title}</h3>
+        <h3 className="text-2xl font-bold">{title}</h3>
         <p className="text-lg text-gray-700">{places} Online Training with Experts</p>
 
         {/* Avatars */}
@@ -17,10 +16,8 @@ const CourseCard = ({ title, percentage, places }) => {
         </div>
       </div>
 
-      {/* Right Side - Circular Progress */}
       <div className="relative w-16 h-16">
         <svg className="absolute top-0 left-0 w-full h-full" viewBox="0 0 36 36">
-          {/* Background Circle */}
           <circle
             className="text-gray-300"
             strokeWidth="4"
@@ -29,18 +26,16 @@ const CourseCard = ({ title, percentage, places }) => {
             stroke="black"
             d="M18 2.0845 a 15.9155 15.9155 0 1 1 0 31.831"
           />
-          {/* Progress Circle */}
           <circle
             className="text-pink-500"
             strokeWidth="4"
             fill="none"
-            strokeDasharray={`${percentage}, 100`}  // ✅ Fixed
+            strokeDasharray={`${percentage}, 100`} 
             strokeLinecap="round"
             stroke="hotpink"
             d="M18 2.0845 a 15.9155 15.9155 0 1 1 0 31.831"
           />
         </svg>
-        {/* Percentage in Center */}
         <div className="absolute inset-0 flex items-center justify-center bg-black text-white text-sm font-bold rounded-full">
           {percentage}%
         </div>
