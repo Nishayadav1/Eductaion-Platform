@@ -1,13 +1,14 @@
 import React from "react";
+import { BookOpen, Calculator, Globe, PenTool, Compass, Dumbbell } from "lucide-react";
 
 const FavouriteCourse = () => {
   const categories = [
-    "Science",
-    "Mathematics",
-    "English",
-    "History",
-    "Geography",
-    "Physical Education",
+    { name: "Science", icon: <BookOpen size={50} className="text-white bg-black bg-opacity-50 rounded-full p-2" /> },
+    { name: "Mathematics", icon: <Calculator size={50} className="text-white bg-black bg-opacity-50 rounded-full p-2" /> },
+    { name: "English", icon: <PenTool size={50} className="text-white bg-black bg-opacity-50 rounded-full p-2" /> },
+    { name: "History", icon: <Globe size={50} className="text-white bg-black bg-opacity-50 rounded-full p-2" /> },
+    { name: "Geography", icon: <Compass size={50} className="text-white bg-black bg-opacity-50 rounded-full p-2" /> },
+    { name: "Physical Education", icon: <Dumbbell size={50} className="text-white bg-black bg-opacity-50 rounded-full p-2" /> },
   ];
 
   return (
@@ -24,15 +25,11 @@ const FavouriteCourse = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
           {categories.map((category, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center">
-              <img
-                src={`/category-${index + 1}.jpg`}
-                alt={category}
-                className="w-full h-40 object-cover rounded-lg"
-              />
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-semibold">{category}</h3>
+            <div key={index} className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center space-y-4">
+              <div className="w-20 h-20 flex justify-center items-center bg-[#1BB49A] rounded-full shadow-lg">
+                {category.icon}
               </div>
+              <h3 className="text-xl font-semibold">{category.name}</h3>
             </div>
           ))}
         </div>

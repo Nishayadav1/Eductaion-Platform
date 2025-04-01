@@ -53,20 +53,19 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="flex gap-2">
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+        <Link
+          to="/joinus"
           className="bg-zinc-900 text-white px-4 py-2 rounded-full font-semibold"
         >
           Join Us
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+        </Link>
+
+        <Link
+          to="/login"
           className="bg-zinc-900 text-white px-4 py-2 rounded-full font-semibold"
         >
-          <Link to="/login">Log in</Link>
-        </motion.button>
+          Log in
+        </Link>
       </div>
     </motion.nav>
   );

@@ -32,7 +32,7 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen mt-18 w-full flex items-center justify-center bg-gradient-to-r from-[#F7EAE7] to-orange-200 relative">
+    <div className="h-screen  w-full flex items-center justify-center bg-gradient-to-r from-[#F7EAE7] to-orange-200 relative">
       {/* Light Blur Effect when Modal is Open */}
       {showForgotPassword && (
         <div className="fixed inset-0 bg-black/20 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity">
@@ -40,7 +40,7 @@ const Login = () => {
         </div>
       )}
 
-      <div className="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-xl w-96 border border-gray-300 shadow-orange-400/40 z-10">
+      <div className="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-xl w-96 border border-gray-300 shadow-orange-400/40 ">
         <h2 className="text-2xl font-semibold text-gray-800 text-center mb-6">
           Welcome Back
         </h2>
